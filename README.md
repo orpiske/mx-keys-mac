@@ -26,3 +26,10 @@ Install
 Uninstall
 ===
 `make uninstall`
+
+You might need to login or logout after running either of these commands.
+
+License
+===
+
+This is licensed under the [WTFPL](http://www.wtfpl.net/about/).
