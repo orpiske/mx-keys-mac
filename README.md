@@ -20,12 +20,12 @@ This custom keyboard layout was created using [Ukele](https://software.sil.org/u
 
 Install
 ===
-`make install`
+`sudo make install`
 
 
 Uninstall
 ===
-`make uninstall`
+`sudo make uninstall`
 
 You might need to login or logout after running either of these commands.
 

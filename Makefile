@@ -1,11 +1,10 @@
 clean:
-	rm -rf "$(HOME)/Library/Keyboard Layouts/us-intl-mx-keys.bundle"
-	rm "$(HOME)/Library/Keybindings/DefaultKeyBinding.dict"
+	rm -rf "/Library/Keyboard Layouts/us-intl-mx-keys.bundle"
+	rm "/Library/Keybindings/DefaultKeyBinding.dict"
 
 install-keybindings:
-	mkdir -p "$(HOME)/Library/Keybindings/"
-	cp DefaultKeyBinding.dict "$(HOME)/Library/Keybindings/"
-
+	mkdir -p "/Library/KeyBindings/"
+	install -m644 DefaultKeyBinding.dict "/Library/KeyBindings/"
 
 install: install-keybindings
-	cp -Rv us-intl-mx-keys.bundle "$(HOME)/Library/Keyboard Layouts"
+	cp -Rv us-intl-mx-keys.bundle "/Library/Keyboard Layouts"
